@@ -1,0 +1,25 @@
+cloud:
+  aws:
+    credentials:
+      access-key: access
+      secret-key: secret
+    region:
+      static: us-west-2
+    stack:
+      auto: false
+      
+application:
+  bucket:
+    name: s3bucketName
+    
+server:
+  port: 9090
+  
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+
+kafka:
+  topic: testByAmodTopic
+  partitions: 3
